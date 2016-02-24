@@ -217,7 +217,7 @@ To clear the credentials for an account, revoke its authentication
 
 ### Install Google App Engine Component
 
-The App Engine Component provides necessary tools (implemented in Python which explains the dependency on Python 2.7) to run and test applications locally, and to deploy them to the Cloud Platform. 
+The App Engine Component provides necessary tools (implemented in Python which explains the dependency on Python 2.7) to run and test applications locally, and to deploy them to the App Engine. 
 
 > onGit/GAE$ gcloud components install app-engine-java
 
@@ -320,7 +320,9 @@ The App Engine Component provides necessary tools (implemented in Python which e
 
 Observation: I could not install the App Engine Component using the <i>gcloud</i> command, so I chose to download the SDK manually.
 
-### Download the App Engine SDK
+### Install Google App Engine by Manual Download
+
+<b> Download the App Engine SDK </b>
 
 Follow the instructions provided at 
 
@@ -349,7 +351,13 @@ https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Java
 
 https://developers.google.com/eclipse/
 
+This installs a separate copy of the SDK, which can be found from Eclipse preferences.
+
+<img src="_misc/App%20Engine%20Preferences.png"/>
+
 <b> Signin to the Cloud Platform From Eclipse </b>
+
+Authorize the eclipse plugin to interact with the App Engine on our behalf.
 
 <img src="_misc/Eclipse%20Signing%20in.png"/>
 
