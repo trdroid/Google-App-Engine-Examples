@@ -101,7 +101,7 @@ Once allowed, the following page is displayed
 
 More than one account can be added using the same command i.e. <i>gcloud auth login</i> and by signing in with a different account.
 
-The credentials provided to <i>gcloud</i> are remembered for each authenticated account and used with the subsequent commands. 
+The credentials provided to <i>gcloud</i> are remembered for each authenticated account. The credentials for the active account are used automatically with the subsequent commands. 
 
 <b> Viewing All Accounts, Including the Active one </b>
 
