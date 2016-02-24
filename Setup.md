@@ -12,15 +12,15 @@ The Google Cloud SDK contains the tools and libraries for developing, testing, a
 
 > curl https://sdk.cloud.google.com | bash
 
-The installation directory that I provided during the installation is /home/droid/software/GAE
+The installation directory that I provided during the installation is /home/droid/software/google-cloud
 
 It also asks for the path to the rc file and adds itself to the PATH
 
-> software/GAE$ ls
+> software/google-cloud$ ls
 
     google-cloud-sdk
 
-> software/GAE$ ls google-cloud-sdk/
+> software/google-cloud$ ls google-cloud-sdk/
 
     bin  completion.bash.inc  completion.zsh.inc  install.bat  install.sh  lib  LICENSE  path.bash.inc  path.zsh.inc  platform  properties  README  RELEASE_NOTES
 
@@ -28,7 +28,7 @@ It also asks for the path to the rc file and adds itself to the PATH
 
 In a new terminal window, check the following
 
-> droid@droidserver:~/onGit/GAE$ gcloud -h
+> droid@droidserver:~/onGit/google-cloud$ gcloud -h
 
     Usage: gcloud [optional flags] <group | command>
       group may be           auth | components | compute | config | container |
@@ -99,7 +99,7 @@ The <i>gcloud</i> command can be used to interact with the Cloud Platform as an 
 
 Authenticate with the Cloud SDK using the following command.
 
-> onGit/GAE$ gcloud auth login
+> onGit/google-cloud$ gcloud auth login
 
     Your browser has been opened to visit:
     
@@ -122,7 +122,7 @@ The credentials provided to <i>gcloud</i> are remembered for each authenticated 
 
 <b> Viewing All Accounts, Including the Active one </b>
 
-> onGit/GAE$ gcloud auth list
+> onGit/google-cloud$ gcloud auth list
 
     Loading legacy configuration file: [/home/droid/.config/gcloud/properties]
     This configuration file is deprecated and will not be read in a future
@@ -150,7 +150,7 @@ The credentials provided to <i>gcloud</i> are remembered for each authenticated 
 
 To clear the credentials for an account, revoke its authentication
 
-> onGit/GAE$ gcloud auth revoke
+> onGit/google-cloud$ gcloud auth revoke
 
     Loading legacy configuration file: [/home/droid/.config/gcloud/properties]
     This configuration file is deprecated and will not be read in a future
@@ -171,7 +171,7 @@ To clear the credentials for an account, revoke its authentication
 
 ### View Installed Components
 
-> onGit/GAE$ gcloud components list
+> onGit/google-cloud$ gcloud components list
 
     Loading legacy configuration file: [/home/droid/.config/gcloud/properties]
     This configuration file is deprecated and will not be read in a future
@@ -219,7 +219,7 @@ To clear the credentials for an account, revoke its authentication
 
 The App Engine Component provides necessary tools (implemented in Python which explains the dependency on Python 2.7) to run and test applications locally, and to deploy them to the Cloud Platform. 
 
-> onGit/GAE$ gcloud components install app-engine-java
+> onGit/google-cloud$ gcloud components install app-engine-java
 
     Loading legacy configuration file: [/home/droid/.config/gcloud/properties]
     This configuration file is deprecated and will not be read in a future
@@ -265,7 +265,7 @@ The App Engine Component provides necessary tools (implemented in Python which e
     
     Update done!
     
-> onGit/GAE$ gcloud components list
+> onGit/google-cloud$ gcloud components list
 
     Loading legacy configuration file: [/home/droid/.config/gcloud/properties]
     This configuration file is deprecated and will not be read in a future
@@ -307,7 +307,20 @@ The App Engine Component provides necessary tools (implemented in Python which e
     
     To update your SDK installation to the latest version [97.0.0], run:
       $ gcloud components update
+
+<i> The following did not work </i>
+
+> droid@droidserver:~/onGit/google-cloud$ dev_appserver --help
+
+    dev_appserver: command not found
     
+> onGit/google-cloud$ app-engine-java --help
+    
+    app-engine-java: command not found
+
+### Download the App Engine SDK
+
+https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Java
 
 
 
