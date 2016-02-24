@@ -345,4 +345,11 @@ https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Java
      --jvm_flag=FLAG            Pass FLAG as a JVM argument. May be repeated to
                                   supply multiple flags.
 
+### Install Google App Engine Plugins for Eclipse
+
+https://developers.google.com/eclipse/
+
+<b> Signin to the Cloud Platform From Eclipse </b>
+
+<img src="_misc/setup/_misc/Eclipse%20Signing%20in.png"/>
 
