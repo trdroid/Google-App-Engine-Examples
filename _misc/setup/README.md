@@ -359,7 +359,7 @@ This installs a separate copy of the SDK, which can be found from Eclipse prefer
 
 <img src="_misc/App%20Engine%20Preferences.png"/>
 
-Configure the App Engine SDK downloaded earlier in Eclipse
+Configure Eclipse to use the App Engine SDK downloaded earlier.
 
 <img src="_misc/Configure%20App%20Engine%20SDK.png"/>
 
