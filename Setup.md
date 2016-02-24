@@ -310,17 +310,39 @@ The App Engine Component provides necessary tools (implemented in Python which e
 
 <i> The following did not work </i>
 
-> droid@droidserver:~/onGit/GAE$ dev_appserver --help
+> droid@droidserver:~/onGit/GAE$ dev_appserver.sh --help
 
-    dev_appserver: command not found
+    dev_appserver.sh: command not found
     
 > onGit/GAE$ app-engine-java --help
     
     app-engine-java: command not found
 
+Observation: I could not install the App Engine Component using the <i>gcloud</i> command, so I chose to download the SDK manually.
+
 ### Download the App Engine SDK
+
+Follow the instructions provided at 
 
 https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Java
 
+> onGit/GAE$ dev_appserver.sh --help
+
+    Usage: <dev-appserver> [options] <app directory>
+    
+    Options:
+     --help, -h                 Show this help message and exit.
+     --sdk_root=DIR             Overrides where the SDK is located.
+     --server=SERVER            The server to use to determine the latest
+      -s SERVER                   SDK version.
+     --address=ADDRESS          The address of the interface on the local machine
+      -a ADDRESS                  to bind to (or 0.0.0.0 for all interfaces).
+     --port=PORT                The port number to bind to on the local machine.
+      -p PORT
+     --disable_update_check     Disable the check for newer SDK versions.
+     --generated_dir=DIR        Set the directory where generated files are created.
+     --default_gcs_bucket=NAME  Set the default Google Cloud Storage bucket name.
+     --jvm_flag=FLAG            Pass FLAG as a JVM argument. May be repeated to
+                                  supply multiple flags.
 
 
