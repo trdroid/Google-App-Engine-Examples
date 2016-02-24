@@ -351,5 +351,5 @@ https://developers.google.com/eclipse/
 
 <b> Signin to the Cloud Platform From Eclipse </b>
 
-<img src="_misc/setup/_misc/Eclipse%20Signing%20in.png"/>
+<img src="_misc/Eclipse%20Signing%20in.png"/>
 
