@@ -318,7 +318,7 @@ The App Engine Component provides necessary tools (implemented in Python which e
     
     app-engine-java: command not found
 
-Observation: I could not install the App Engine Component using the <i>gcloud</i> command, so I chose to download the SDK manually.
+<b>Observation: I could not install the App Engine Component using the <i>gcloud</i> command, so I chose to download the SDK manually.</b>
 
 ### Install Google App Engine by Manual Download
 
@@ -347,7 +347,11 @@ https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Java
      --jvm_flag=FLAG            Pass FLAG as a JVM argument. May be repeated to
                                   supply multiple flags.
 
+<b> The command line tool for the App Engine is now setup </b>
+
 ### Install Google App Engine Plugins for Eclipse
+
+Eclipse IDE can be used to develop and deploy applications to the App Engine. 
 
 https://developers.google.com/eclipse/
 
