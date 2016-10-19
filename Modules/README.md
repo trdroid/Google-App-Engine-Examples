@@ -1,13 +1,15 @@
 # Modules
 
+App Engine allows grouping instances and assigning each group a specific purpose. Each such group is known as a *module*. 
+
 ### Requirement for Modules
 
-Automatic scaling instances of the App Engine serves the following purposes
+Automatic-scaling instances of the App Engine serves the following purposes
 
 * handling large scale user traffic
 * handling traffic spikes 
 
-However, Automatic scaling instances might not be suited for other computation tasks
+However, automatic-scaling instances might not be suited for other computation tasks
 
 * Always-listening Backend Services
 * Batch jobs
@@ -15,12 +17,24 @@ However, Automatic scaling instances might not be suited for other computation t
 
 ### Configuration
 
-**URL**
+**Configuring URL**
 
 A module can be configured with its own URL, which makes it accessible individually. A URL can be configured to be
 
 * public: to allow external clients to access the module.
 * private: to allow ONLY other modules to access the module internally.
+
+**Configuring Scaling Strategies**
+
+A module can be configured with the following scaling strategies
+
+* *Automatic Scaling*
+* *Manual Scaling*: involves starting and stopping instances 
+    * Using Cloud SDK within the app (or)
+    * Calling an API from the app
+* *Basic Scaling*: involves features of *Manual Scaling* + a configurable scheduler that can
+    * start new instances, if necessary, in response to requests
+    * stop idle instances after a configurable period of time
 
 ### Deployment
 
